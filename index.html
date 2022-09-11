@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora JS</title>
+</head>
+
+<body>
+    <!--Criação da DIV Calculadora, div principal do meu html e container das outras-->
+    <div id="calculadora" class="calculadora">
+        <!--Criação da DIV Operações, esta div vai guardar mais duas DIVS, a div do meu display e a
+            div do historico do meu display, aqui
+        serão exibidos os números da "tela"-->
+        <div id="operacoes" class="operacoes">
+            <h3 id="titulo" class="titulo">Calculadora JS</h3>
+            <!--DIV display historico será para exibir na tela o historico digitado-->
+            <div id="display-historico" class="display-historico">
+    
+            </div>
+            <!--DIV display será para exibir na tela o valor digitado-->
+            <div id="display" class="display">
+                
+            </div>
+        </div>
+        <!--DIV BOTÕES é a div na qual eu coloquei todos os botões da aplicação-->
+        <div id="botoes" class="botoes">
+
+            <button class="btn-numero" value="7" onclick="">7</button>
+            <button class="btn-numero" value="8" onclick="">8</button>
+            <button class="btn-operador" value="+" onclick="operacao(value)">+</button>
+            <button class="btn-operador" onclick="calcular()">=</button>
+            <button class="btn-operador" onclick="limpar()">C</button>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
