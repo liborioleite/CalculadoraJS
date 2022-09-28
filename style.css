@@ -8,90 +8,58 @@
 /*estilizando o corpo e alinhando no centro da página com o display flex e justify*/
 body{
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,12,36,1) 38%, rgba(16,34,56,1) 71%);
-    /*background-color: #333;*/
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 3em;
 }
 /*estilizando a div calculadora e colocando os item em coluna*/
-.calculadora{
+.calculator{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
     width: 400px;
     padding: .5em;
     background-color: #c4c4c4;
     color: black;
     display: flex;
-    flex-direction: column;
+   
 }
-/**/
-.titulo{
-    font-size: .8em;
-    font-weight: 300;
-    color: #666;
+
+.buttons-calculator{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+
 }
+
 /*estilizando o historico do display e pondo min-heigth pra prever a altura dos números e wrap para 
 os numeros não quebrarem saindo da caixa da div*/
-.display-historico{
-    color: #777;
+.historic{
+    text-align: right;
+    text-align: right;
+    font-size: 1.0em;
+    color: rgb(68, 67, 67);
     padding: 0.2em;
     overflow-wrap: break-word;
     min-height: 1.6em; 
-    text-align: right;
 }
 /*estilizando o display e pondo min-heigth pra prever a altura dos números e wwrap para 
 os numeros não quebrarem saindo da caixa da div*/
 .display{
+    text-align: right;
     font-size: 2em;
     color: rgb(68, 67, 67);
     padding: 0.2em;
     overflow-wrap: break-word;
     min-height: 1.6em; 
-    text-align: right;
-}
-/*estilizando a div dos botões com o display grid pra ajudar a fazer as colunas
-utilizando 1fr para por 4 frações de colunas com um Gap (espaço) entr os botões */
-.botoes{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    gap: 3px;
-}
-.btn-numero:hover{
-    background-color: rgb(155, 155, 155);
-    color:white;
+
 }
 
-.btn-operador:hover{
-    background-color: rgb(150, 151, 151);
-    color:rgb(255, 255, 255);
-}
-
-.btn-igual:hover{
-    background-color: cadetblue;
-    color:white;
-}
-.btn-igual{
-    border: 1px solid transparent;
-    border-radius: 0;
-    height: 4em;
-    font-size: 1.2em;
-    background-color: cadetblue;
-    cursor: pointer;
-}
-
-.btn-operador{
-    border: 1px solid transparent;
-    border-radius: 0;
-    height: 4em;
-    font-size: 1.2em;
-    background-color: cadetblue;
-    cursor: pointer;
-}
-
-.btn-numero{
-    border: 1px solid transparent;
-    border-radius: 0;
-    height: 4em;
-    font-size: 1.2em;
-    background-color: #dbdbdb;
+input{
+    width: 50px;
+    height: 50px;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
     cursor: pointer;
 }
